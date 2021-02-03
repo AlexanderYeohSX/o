@@ -79,9 +79,9 @@ QWidget * toggles_panel() {
   QVBoxLayout *toggles_list = new QVBoxLayout();
   toggles_list->setMargin(50);
 
-  toggles_list->addWidget(new ParamsToggle("OpenpilotEnabledToggle",
-                                            "Enable openpilot",
-                                            "Use the openpilot system for adaptive cruise control and lane keep driver assistance. Your attention is required at all times to use this feature. Changing this setting takes effect when the car is powered off.",
+  toggles_list->addWidget(new ParamsToggle("BukapilotEnabledToggle",
+                                            "Enable bukapilot (Alex Was Here)",
+                                            "Use the bukapilot system for adaptive cruise control and lane keep driver assistance. Your attention is required at all times to use this feature. Changing this setting takes effect when the car is powered off.",
                                             "../assets/offroad/icon_openpilot.png"
                                               ));
   toggles_list->addWidget(horizontal_line());
