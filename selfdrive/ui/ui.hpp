@@ -79,7 +79,8 @@ typedef enum UIStatus {
 
 static std::map<UIStatus, NVGcolor> bg_colors = {
 #ifdef QCOM
-  {STATUS_OFFROAD, nvgRGBA(0x07, 0x23, 0x39, 0xf1)},
+  // {STATUS_OFFROAD, nvgRGBA(0x07, 0x23, 0x39, 0xf1)},
+  {STATUS_OFFROAD, nvgRGBA(0x0, 0x0, 0x0, 0xff)},
 #else
   {STATUS_OFFROAD, nvgRGBA(0x0, 0x0, 0x0, 0xff)},
 #endif
